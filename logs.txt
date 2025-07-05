@@ -1,0 +1,73 @@
+---------- upload photos errors ----------
+
+	In folder Р®СЂР°:
+		Can`t download image (С‡Р°СЃС‚СЊ2):	extention is not avaliable
+		Can`t download image (С‡Р°СЃС‚СЊ1):	extention is not avaliable
+
+		Total:
+			Successfully:	4
+			Errors:			0
+			Skip:			0
+
+	In folder Р›С‘С€Р°:
+
+		Total:
+			Successfully:	12
+			Errors:			0
+			Skip:			0
+
+	In folder Р”РёРјР°:
+		Can`t download image (IMG_3173.MOV):	extention is not avaliable
+		Can`t download image (IMG_3162.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3130.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3129.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3129 (1).HEIC):	extention is not avaliable
+		Can`t download image (IMG_3163.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3156.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3155.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3148.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3169.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3157.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3145.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3144.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3143.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3149.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3147.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3154.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3152.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3167.HEIC):	extention is not avaliable
+		Can`t download image (IMG_3168.HEIC):	extention is not avaliable
+
+		Total:
+			Successfully:	1
+			Errors:			0
+			Skip:			0
+
+	In folder Р’РµСЂРѕРЅРёРєР°:
+
+		Total:
+			Successfully:	0
+			Errors:			0
+			Skip:			0
+
+---------- organize photos into folders errors ----------
+	Couldn't move ./Data/row_photos/Дима\IMG_3140.jpeg to ./Data\days\День 7\IMG_3140.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Дима\\IMG_3140.jpeg' -> './Data\\days\\День 7\\IMG_3140.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230813_195540.jpeg to ./Data\days\День 1\IMG_20230813_195540.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230813_195540.jpeg' -> './Data\\days\\День 1\\IMG_20230813_195540.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230815_124518.jpeg to ./Data\days\День 3\IMG_20230815_124518.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230815_124518.jpeg' -> './Data\\days\\День 3\\IMG_20230815_124518.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230816_121906.jpeg to ./Data\days\День 4\IMG_20230816_121906.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230816_121906.jpeg' -> './Data\\days\\День 4\\IMG_20230816_121906.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230816_121907.jpeg to ./Data\days\День 4\IMG_20230816_121907.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230816_121907.jpeg' -> './Data\\days\\День 4\\IMG_20230816_121907.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230816_121910.jpeg to ./Data\days\День 4\IMG_20230816_121910.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230816_121910.jpeg' -> './Data\\days\\День 4\\IMG_20230816_121910.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230816_153941.jpeg to ./Data\days\День 4\IMG_20230816_153941.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230816_153941.jpeg' -> './Data\\days\\День 4\\IMG_20230816_153941.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230816_162704.jpeg to ./Data\days\День 4\IMG_20230816_162704.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230816_162704.jpeg' -> './Data\\days\\День 4\\IMG_20230816_162704.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230817_063418.jpeg to ./Data\days\День 5\IMG_20230817_063418.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230817_063418.jpeg' -> './Data\\days\\День 5\\IMG_20230817_063418.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230817_063953.jpeg to ./Data\days\День 5\IMG_20230817_063953.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230817_063953.jpeg' -> './Data\\days\\День 5\\IMG_20230817_063953.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230817_064005.jpeg to ./Data\days\День 5\IMG_20230817_064005.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230817_064005.jpeg' -> './Data\\days\\День 5\\IMG_20230817_064005.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230817_064142.jpeg to ./Data\days\День 5\IMG_20230817_064142.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230817_064142.jpeg' -> './Data\\days\\День 5\\IMG_20230817_064142.jpeg'
+	Couldn't move ./Data/row_photos/Лёша\IMG_20230817_064319.jpeg to ./Data\days\День 5\IMG_20230817_064319.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Лёша\\IMG_20230817_064319.jpeg' -> './Data\\days\\День 5\\IMG_20230817_064319.jpeg'
+	Couldn't move ./Data/row_photos/Юра\IMG_8445.jpeg to ./Data\days\День 3\IMG_8445.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Юра\\IMG_8445.jpeg' -> './Data\\days\\День 3\\IMG_8445.jpeg'
+	Couldn't move ./Data/row_photos/Юра\IMG_8446.jpeg to ./Data\days\День 3\IMG_8446.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Юра\\IMG_8446.jpeg' -> './Data\\days\\День 3\\IMG_8446.jpeg'
+	Couldn't move ./Data/row_photos/Юра\IMG_8447.jpeg to ./Data\days\День 3\IMG_8447.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Юра\\IMG_8447.jpeg' -> './Data\\days\\День 3\\IMG_8447.jpeg'
+	Couldn't move ./Data/row_photos/Юра\IMG_8448.jpeg to ./Data\days\День 4\IMG_8448.jpeg with exception:	[WinError 183] Невозможно создать файл, так как он уже существует: './Data/row_photos/Юра\\IMG_8448.jpeg' -> './Data\\days\\День 4\\IMG_8448.jpeg'
+	Total not moved:	17
+
+---------- rename errors ----------

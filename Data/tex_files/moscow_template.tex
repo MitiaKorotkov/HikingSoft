@@ -1,0 +1,659 @@
+\documentclass[a5paper, 12pt, twoside]{article}
+
+\input{ {{preambule}} }
+
+\begin{document}
+%---------------обложка----------------------------------------------------
+    \thispagestyle{empty}
+    
+    {\centering\bf%
+    Федерация спортивного туризма России\\Федерация спортивного туризма – объединение туристов Москвы\par}
+    \vspace{1cm}
+
+    {\hfil\includegraphics[height=3.6cm]{ {{pictures['FSTR_logo']}} }\hfil\raisebox{0.1cm}{\includegraphics[height=3.4cm]{ {{pictures['FSTM_logo']}} }}\hfil\par}
+    \vspace{1cm}
+
+    {\centering\Large\bf%
+    МАРШРУТНАЯ КНИЖКА № 1\par}
+
+    {\centering%
+    ТУРИСТСКОГО МАРШРУТА\par}
+    \vspace{1.5cm}
+        
+    {\centering%
+    Участники настоящего спортивного мероприятия\\
+    находятся под защитой:\par}
+    \vspace{0.7cm}
+
+    {\centering%
+    Конституции Российской Федерации,\\
+    Федерального закона РФ №132-ФЗ от 24 ноября 1996 года <<Об основах туристской деятельности в Российской Федерации>>,\\
+    Федерального закона РФ №339-ФЗ от 04 декабря 2007 года <<О физической культуре и спорте в Российской Федерации>>,\\
+    Федерации спортивного туризма России\par}
+    \vspace{3cm}
+
+    {\centering%
+    {{general_info['year']}} г.\par}
+
+\newpage %---------------первая страница-----------------------------------
+
+    {\centering\large\bf%
+    ВНИМАНИЕ!\par}
+
+    Согласно действующему законодательству, туристские группы должны проинформировать
+    службы МЧС России за 10 дней до начала путешествия. При подаче онлайн-заявки на
+    регистрацию необходимо указать состав и количество участников, руководителей,
+    контактные телефоны, подробную информацию о маршруте и т.д. Ответственный сотрудник
+    ведомства в субъекте РФ обязан обработать заявку в течение одного рабочего дня,
+    после чего передать сведения в спасательное подразделение, в зоне ответственности
+    которого планируется маршрут. Для этого необходимо:
+
+    \begin{enumerate}[leftmargin=0.5cm, rightmargin=0cm]
+        \item Пройти онлайн регистрацию туристской группы на сайте\hfil\\
+        {\small\url{https://forms.mchs.ru/service/registration_tourist_groups}},\\
+        отделение МЧС по региону прохождения маршрута.
+        \item Получить регистрационный номер группы в МЧС и сообщить о
+        номере регистрации в региональном отделении МЧС в МКК.
+        \item Сообщить в территориальный орган МЧС и МКК, а также в случае
+        участия в официальных соревнованиях в ГСК, о выходе на маршрут.
+        \item По окончании маршрута проинформировать территориальный орган
+        МЧС в срок и способом, указанном в уведомлении.
+    \end{enumerate}
+
+    \setlength\parindent{0pt}
+
+\newpage %---------------вторая страница-----------------------------------
+
+    \section{Общие сведения}\label{s:group}
+        Группа туристов \textbf{%
+        {{general_info['club_name']}}, {{general_info['city']}}}
+        в составе \textbf{%
+        {{general_info['size_of_group']}}}
+        человек
+        с \textbf{%
+        {{general_info['start_day']}}}
+        по \textbf{%
+        {{general_info['finish_day']}}} совершает
+        прохождение \textbf{горного} маршрута \textbf{%
+        {{general_info['complexity']}}} категории сложности
+        в районе: \textbf{%
+        {{general_info['mountanious_area']}}}
+        \vspace{0.5cm}
+        
+        по маршруту: \textit{%
+            {{general_info['rout']}}
+        }
+        \vspace{2.5cm}
+        
+        \hbox to \textwidth{Руководитель группы:\hfil\textbf{%
+        {{general_info['leader_full_name']}}}}
+
+        \hbox to \textwidth{\hfil тел.:
+        {{general_info['leader_phone_number']}}}
+        \vspace{1.5cm}
+        
+        Телефон для связи
+        
+        \hbox to \textwidth{с группой на маршруте:\hfil
+        {{general_info['group_phone_number']}}}
+        \vspace{0.5cm}
+        
+        \hbox to \textwidth{Телефон МЧС:\hfil
+        {{general_info['mchs_phone_number']}}}
+
+        \hbox to \textwidth{\hfil\parbox{0.6\textwidth}{\raggedleft%
+        {{general_info['mchs_name']}}\\{{general_info['mchs_addres']}}\par}}
+
+\newpage %---------------третья страница-----------------------------------
+
+    \section{Состав группы}
+        \newcommand{\myfootnotetext}{\tiny Даю своё согласие на обработку, использование и хранение персональных
+        данных, согласно Федеральному закону 152-ФЗ от 27.07.2006 <<О персональных данных>>,
+        необходимых для рассмотрения маршрутных и отчетных документов.}
+
+        \renewcommand{\arraystretch}{1.2}
+        \setlength{\arrayrulewidth}{0.25mm}
+        \setlength{\arraycolsep}{1pt}
+        \setlength{\tabcolsep}{0pt}
+        {\scriptsize%
+		\begin{longtable}{%
+            |>{\centering\arraybackslash} m{0.5cm}%
+            |>{\centering\arraybackslash} m{3cm}%
+            |>{\centering\arraybackslash} m{1.5cm}%
+            |>{\centering\arraybackslash} m{6cm}%
+            |>{\centering\arraybackslash} m{1.5cm}|}
+			\hline\rowcolor{Gray}
+			№   &   ФИО							    &   Год рожд.       &   Место проживания: субъект РФ, населённый пункт, телефон &   {Подпись\footnote{\myfootnotetext}} \\ \hline
+			{{tables['group_members_1']}}
+		\end{longtable}}
+
+        \stepcounter{footnote}
+        \footnotetext{\tiny При очном рассмотрении замена участников заверяется штампом МКК, а при
+        заочном "--- прикладывается письмо от МКК, направившей маршрутные документы на рассмотрение}
+
+\newpage %---------------четвёртая страница--------------------------------
+
+        \renewcommand{\myfootnotetext}{\tiny По требованию МКК предъявляются справки о пройденных
+        маршрутах или список ниток маршрутов, пройденных участниками и руководителем, заверенные
+        нижестоящей МКК или другие материалы, подтверждающие туристский опыт.)}
+        
+        \newcommand{\myfootnotetextt}{\tiny О знании об опасностях для жизни и здоровья при прохождении
+        запланированного маршрута, о правах и обязанностях участника туристской группы, а также для
+        спортсменов: Кодекса путешественника, Правил вида спорта <<спортивный туризм>>, часть 2.}
+
+        \renewcommand{\arraystretch}{2}
+        {\scriptsize%
+        \begin{longtable}{%
+            |>{\centering\arraybackslash} m{2.9cm}%
+            |>{\centering\arraybackslash} m{5.3cm}%
+            |>{\centering\arraybackslash} m{3.2cm}%
+            |>{\centering\arraybackslash} m{1.5cm}|}
+            \hline
+            \rowcolor{Gray}
+            Телефон, E-mail, контактные данные родственников    &   Туристский опыт\footnote{\myfootnotetext} {\tiny перечислить маршруты, совершенные по данному виду туризма с указанием районов и категорий сложности}   &%
+            Обязанности в группе, распределение по средствам сплава &   Подпись\footnote{\myfootnotetextt}  \\ \hline
+            {{tables['group_members_2']}}
+        \end{longtable}}
+
+        {\centering\textbf{<<Наличие туристского опыта подтверждаю>>}\par}
+        \vspace{0.3cm}
+
+        Член МКК \quad\hbox to 0.25\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.45\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.45\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}
+
+\newpage %---------------пятая страница------------------------------------
+    \stepcounter{section}
+    \subsection[]{График движения группы по маршруту\\ (заявленный)}\label{ss:general_plan}
+        
+        \renewcommand{\arraystretch}{1.2}
+        {\scriptsize%
+        \begin{longtable}{%
+            |>{\centering\arraybackslash} m{1cm}%
+            |>{\centering\arraybackslash} m{0.8cm}%
+            |>{\centering\arraybackslash} m{7cm}%
+            |>{\centering\arraybackslash} m{1.3cm}%
+            |>{\centering\arraybackslash} m{2.1cm}|}
+            \hline\rowcolor{Gray}
+            Дата    &   День пути   &   Участки маршрута                                                                &    Км      &   Способы передвижения\\ \hline
+            {{tables['general_rout']}}
+        \end{longtable}}
+
+        {\small%
+        \textbf{Итого} активными способами передвижения: \textbf{ {{general_info['total_distance']}}\,км}}
+
+\newpage %---------------шестая страница-----------------------------------
+    \newgeometry{top = 0.2 cm, bottom = 1 cm, left = 1.4 cm, right = 1.4 cm}
+    \thispagestyle{empty}
+    \subsection[]{Изменения графика движения по маршруту (согласованные с МКК)\protect\footnote{\tiny При внесении изменений, в п. \ref{ss:general_plan} записывают те дни, в которых произведены изменения. Если маршрут согласован без изменений, то делают запись <<Без изменений>>.}}
+        \vspace{-0.6cm}
+
+        {\scriptsize%
+        \begin{longtable}{%
+            |>{\centering\arraybackslash} m{1cm}%
+            |>{\centering\arraybackslash} m{0.8cm}%
+            |>{\centering\arraybackslash} m{7cm}%
+            |>{\centering\arraybackslash} m{1.3cm}%
+            |>{\centering\arraybackslash} m{2.1cm}|}
+            \hline\rowcolor{Gray}
+            Дата            &   День пути   &   Участки маршрута                                                                                                                                &   Км      &   Способы передвижения\\ \hline
+                            &               &                                                                                                                                                   &           &                       \\ \hline
+                            &               &                                                                                                                                                   &           &                       \\ \hline
+                            &               &                                                                                                                                                   &           &                       \\ \hline
+                            &               &                                                                                                                                                   &           &                       \\ \hline
+                            &               &                                                                                                                                                   &           &                       \\ \hline
+        \end{longtable}}
+        \vspace{-1cm}
+     
+    \subsection[]{График движения группы по запасному варианту}
+        \vspace{-0.6cm}
+
+        {\scriptsize%
+        \begin{longtable}{%
+            |>{\centering\arraybackslash} m{1cm}%
+            |>{\centering\arraybackslash} m{0.8cm}%
+            |>{\centering\arraybackslash} m{7cm}%
+            |>{\centering\arraybackslash} m{1.3cm}%
+            |>{\centering\arraybackslash} m{2.1cm}|}
+            \hline\rowcolor{Gray}
+            Дата            &   День пути   &   Участки маршрута                                                                                                                                &   Км      &   Способы передвижения\\ \hline
+            {{tables['reserve_rout']}}
+        \end{longtable}}
+        \vspace{-1cm}
+
+    \subsection[]{Аварийные выходы с маршрута}
+        \vspace{-0.6cm}
+
+        {\scriptsize%
+        \begin{longtable}{%
+            |>{\centering\arraybackslash} m{1cm}%
+            |>{\centering\arraybackslash} m{0.8cm}%
+            |>{\centering\arraybackslash} m{7cm}%
+            |>{\centering\arraybackslash} m{1.3cm}%
+            |>{\centering\arraybackslash} m{2.1cm}|}
+            \hline\rowcolor{Gray}
+            Дата            &   День пути   &   Участки маршрута                                                                                                                                &   Км      &   Способы передвижения\\ \hline
+            {{tables['emergency_rout']}}
+        \end{longtable}}
+        {\small%
+        \textbf{Итого} активными способами передвижения: \textbf{ {{general_info['total_reserve_distance']}}\,км}}
+   
+\newpage %---------------седьмая страница----------------------------------
+    \restoregeometry
+    \section[]{Схема маршрута\protect\footnote{На схеме, желательно в цветном исполнении, наносится маршрут движения (основной, запасной, аварийный), даты и места предполагаемых мест ночлегов. Представленная схема должна давать четкое представление о нитке прохождения маршрута, его определяющих препятствий. По требованию МКК, к маршрутной книжке прилагается картографический материал, предполагаемый для использования группой на маршруте.}}
+        
+        Прилагается.
+
+\newpage %---------------восьмая страница----------------------------------
+    
+    \section[]{Сложные участки маршрута и способы их преодоления}
+        
+        {\small%
+        \begin{enumerate}
+            {{general_info['difficult_parts']}}
+        \end{enumerate}}
+
+\newpage %---------------девятая страница----------------------------------
+    \section{Материальное обеспечение группы}\label{s:weight}
+        \footnotesize
+        Необходимый набор продуктов питания \uline{имеется}.
+
+        Групповое и личное снаряжение в достаточном количестве \uline{имеется}.
+
+        {\centering\textbf{Специальное снаряжение}\par}
+        \vspace{-0.3cm}
+
+        \renewcommand{\arraystretch}{1.1}
+        {\footnotesize%
+        \begin{longtable}{%
+            |>{\centering\arraybackslash} m{4.8cm}%
+            |>{\centering\arraybackslash} m{1.3cm}%
+            |>{\centering\arraybackslash} m{4.8cm}%
+            |>{\centering\arraybackslash} m{1.3cm}|}
+            \hline\rowcolor{Gray}
+            \multicolumn{2}{|c|}{Групповое}                     &   \multicolumn{2}{c|}{Личное}             \\ \hline\rowcolor{Gray}
+            Наименование                            &   Кол-во  &   Наименование                &   Кол-во  \\ \hline
+            {{tables['equipment']}}
+        \end{longtable}}
+        \vspace{-0.3cm}
+
+        Необходимый ремонтный набор \uline{имеется}.
+
+        Необходимый набор лекарств и материалов в аптечке первой помощи \uline{имеется}.
+    
+        Картосхема маршрута, перечень определяющих препятствий и способы их прохождения, а также варианты аварийных выходов прилагаются.
+        
+        {\centering\textbf{Весовые характеристики груза, взятого на маршрут}\par}
+        \vspace{-0.3cm}
+
+        {\footnotesize%
+        \begin{longtable}{%
+            |>{\centering\arraybackslash} m{5.9cm}%
+            |>{\centering\arraybackslash} m{3cm}%
+            |>{\centering\arraybackslash} m{3.3cm}|}
+            \hline\rowcolor{Gray}
+            Наименование                            &   На 1 человека       &   На группу в {{general_info['size_of_group']}} чел. \\ \hline
+            Продукты (всего/в день)                 &   {{weights[0][0]}}   &   {{weights[0][1]}}   \\ \hline
+            Групповое снаряжение                    &   {{weights[1][0]}}   &   {{weights[1][1]}}   \\ \hline
+            Личное снаряжение                       &   {{weights[2][0]}}   &   {{weights[2][1]}}   \\ \hline
+            \textbf{Всего (за вычетом заброски)}    &   {{weights[3][0]}}   &   {{weights[3][1]}}   \\ \hline
+        \end{longtable}}
+        \vspace{-0.3cm}
+
+        \settowidth{\tmp}{Максимальная нагрузка на одного мужчину \textbf{ {{weights[4][1]}}\,кг},}
+        
+        \vbox{%
+        \hbox{Максимальная нагрузка на одного мужчину \textbf{ {{weights[4][1]}}\,кг},}
+        \hbox to \tmp{\hfil женщину \textbf{ {{weights[4][0]}}\,кг}.}}
+        \vspace{0.1cm}
+        
+        {\scriptsize Сведения, изложенные в разделах 1--6, подтверждаю. Обязуемся соблюдать необходимые меры безопасности при
+        прохождении запланированного маршрута, руководствоваться требованиями правил вида спорта <<спортивный туризм>>
+        (Часть 2) и Регламента организации и прохождения спортивных туристских маршрутов.}
+        
+        \textbf{Руководитель похода\;\hbox to 3cm{\leaders\hrule height 0.2pt \hfill}\;({{general_info['leader_short_name']}})}
+        \vspace{0.1cm}
+        
+        \hbox to 0.8\textwidth{\hfil Дата: \textbf{ {{general_info['date']}} г}.}
+        \normalsize
+
+\newpage %---------------десятая страница----------------------------------
+
+    \section{Ходатайство МКК}
+
+        \textbf{Председателю МКК}\;%
+        \rlap{\raisebox{-0.2cm}{\hbox to 0.62\textwidth{\hfil\tiny Наименование вышестоящей МКК\hfil}}}%
+        \hbox to 0.62\textwidth{\leaders\hrule height 0.2pt \hfill}
+        \vspace{0.2cm}
+        
+        \hbox to \textwidth{\strut\leaders\hrule height 0.2pt \hfill}
+        \vspace{0.5cm}
+        
+        В связи с отсутствием полномочий у маршрутно-ква\-ли\-фи\-ка\-ци\-он\-ной комиссии\;%
+        \rlap{\raisebox{-0.2cm}{\hbox to 0.7\textwidth{\hfil\tiny Наименование ходатайствующей МКК\hfil}}}%
+        \hbox to 0.7\textwidth{\leaders\hrule height 0.2pt \hfill}
+        \vspace{0.2cm}
+        
+        просим Вас рассмотреть маршрутные документы и дать по ним своё заключение. Предварительное
+        рассмотрение произведено нашей комиссией.
+
+        \settowidth{\tmp}{}
+        
+        \textbf{Председатель МКК}\;\hbox to 0.25\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.42\textwidth{\hfil\footnotesize Фамилия И.О.\hfil}}}%
+        \hbox to 0.42\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}
+        \vspace{0.5cm}
+        
+        \hfill<<\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}>>\;\hbox to 3cm{\leaders\hrule height 0.2pt\hfil}\;%
+        20\,\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}\,г.\hspace{-0.2cm}
+        \vspace{1.5cm}
+        
+        Штамп МКК
+        \vspace{2cm}
+        
+        Адрес МКК:\;\hrulefill
+        \vspace{0.5cm}
+        
+        Тел./факс:\;\hrulefill
+        \vspace{0.5cm}
+
+        e-mail:\;\hrulefill\;(обязателен)
+        \vspace{0.5cm}
+        
+        ФИО председателя МКК\;\hrulefill\,
+
+\newpage %---------------одиннадцатая страница-----------------------------
+
+    \section[]{Результаты рассмотрения в маршрутно-\\квалификационной комиссии}
+
+        Маршрутно-квалификационная комиссия \textbf{ФСТ-ОТМ}
+        
+        в составе\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        с участием\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.1cm}
+        
+        рассмотрев материалы заявленного похода группы под руководством {{general_info['leader_short_name_pp']}} считает, что (ненужное зачеркнуть):
+
+        \begin{enumerate}
+            \item Маршрут \textbf{соответствует} (не соответствует) заявленной категории сложности.
+            \item Туристский опыт руководителя группы \textbf{соответствует} (не соответствует) технической сложности маршрута.
+            \item Туристский опыт участников группы \textbf{соответствует} (не соответствует) технической сложности маршрута.
+            \item Заявочные материалы \textbf{отвечают} (не отвечают) установленным требованиям.
+            \item Другие замечания:\;\leaders\hrule height 0.2pt\hfill\strut
+            
+            \,\leaders\hrule height 0.2pt\hfill\strut
+
+            \,\leaders\hrule height 0.2pt\hfill\strut
+
+            \,\leaders\hrule height 0.2pt\hfill\strut
+        \end{enumerate}
+        
+        Группе назначается (\textbf{не назначается}) контрольная проверка на местности\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        
+        \hbox to \textwidth{\hfil\raisebox{1pt}{\scriptsize(где, когда и по каким вопросам)}\hfil}
+
+\newpage %---------------двенадцатая страница------------------------------
+
+    \section[]{Результаты проверки группы на\\ местности}
+
+        \settowidth{\tmp}{Группа в составе: руководитель}
+        \ttmp = \textwidth
+        \addtolength{\ttmp}{-\tmp}
+        
+        Группа в составе: руководитель%
+        \rlap{\raisebox{-0.3cm}{\hbox to \ttmp{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+
+        \settowidth{\tmp}{участники}
+        \ttmp = \textwidth
+        \addtolength{\ttmp}{-\tmp}
+        
+        участники%
+        \rlap{\raisebox{-0.3cm}{\hbox to \ttmp{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        прошла проверку\;%
+        <<\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}>>\;\hbox to 2.5cm{\leaders\hrule height 0.2pt\hfil}\;%
+        20\,\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}\,г.%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.28\textwidth{\hfil\scriptsize место проведения\hfil}}}%
+        \hbox to 0.28\textwidth{\;\leaders\hrule height 0.2pt \hfill}
+        \vspace{0.05cm}
+        
+        по следующим вопросам:\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        Результаты проверки:\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        Проверяющий\;\hbox to 0.3\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.42\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.42\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}
+        \vspace{0.1cm}
+
+    \section[]{Заключение маршрутно-\\квалификационной комиссии}
+
+        Группа под руководством \textbf{%
+        {{general_info['leader_full_name_pp']}}} имеет (не имеет) положительное
+        заключение МКК о прохождении планируемого маршрута.
+        \vspace{0.2cm}
+        
+        Особые указания:\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+        
+        Срок сдачи отчета о походе до\;%
+        <<\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}>>\;\hbox to 3cm{\leaders\hrule height 0.2pt\hfil}\;%
+        20\,\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}\,г.%
+        
+        в объеме \textbf{письменный, полный}
+        \vspace{0.2cm}
+        
+        Адреса и реквизиты для связи с региональным органом МЧС, ПСС или ПСО в районе проведения маршрута:%
+        \;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+
+        \,\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+
+\newpage %---------------тринадцатая страница------------------------------
+
+    \section{Контрольные пункты и сроки}
+
+        О прохождении маршрута группа должна сообщить:
+
+        \begin{enumerate}[itemsep=1pt]
+            \item \parbox[t]{0.58\textwidth}{%
+            {{general_info['mchs_name']}}} \hfil \parbox[t]{0.325\textwidth}{\raggedleft{{general_info['mchs_phone_number']}}}
+            {{general_info['report_to']}}
+        \end{enumerate}
+
+        \begin{itemize}[label=из, noitemsep]
+            \item {{general_info['start_report_point']}} до {{general_info['start_report_date']}}\;г.
+            \item {{general_info['finish_report_point']}} до {{general_info['finish_report_date']}}\;г.
+        \end{itemize}
+
+        Телефон для связи с группой на маршруте:\hfill{{general_info['group_phone_number']}}
+
+        Время и график сеансов связи:\;\hrulefill
+
+        Номер телефона координатора группы:\;\hrulefill
+
+        Электронная почта координатора группы:\;\hrulefill
+        \vspace{0.4cm}
+
+        \hbox to \textwidth{%
+        \textbf{Председатель МКК}\hfil\hbox to 0.2\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.42\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.42\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}}
+        \vspace{0.4cm}
+
+        \hbox to \textwidth{%
+        \textbf{Члены МКК}\hfil\hbox to 0.2\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.42\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.42\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}}
+        \vspace{0.2cm}
+
+        \hbox to \textwidth{\hfil%
+        \hbox to 0.2\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.42\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.42\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}}
+        \vspace{0.2cm}
+
+        \hbox to \textwidth{\hfil%
+        \hbox to 0.2\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.42\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.42\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}}
+        \vspace{0.2cm}
+
+        {\small%
+        \textbf{Судья по виду:} <<Сертификаты на знание антидопинговых правил и страховые полисы предъявлены,
+        меддопуск имеется. Группа допущена к соревнованиям>>%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.65\textwidth{\hfil\scriptsize Статус и наименование соревнований\hfil}}}%
+        \hbox to 0.65\textwidth{\;\leaders\hrule height 0.2pt \hfill}}
+        \vspace{0.5cm}
+
+        Штамп МКК
+        \vspace{0.2cm}
+
+        \hfill%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.3\textwidth{\hfil\scriptsize подпись\hfil}}}%
+        \hbox to 0.3\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.3\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.3\textwidth{\quad\leaders\hrule height 0.2pt \hfill}
+        \vspace{0.5cm}
+
+        \hfill<<\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}>>\;\hbox to 3cm{\leaders\hrule height 0.2pt\hfil}\;%
+        20\,\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}\,г.%
+
+\newpage %---------------пятнадцатая страница------------------------------
+
+    \section[]{Регистрация в территориальном органе\\ МЧC}
+
+        \textbf{Регистрационный номер}\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.4cm}
+
+        \textbf{Дополнительные отметки}\;\leaders\hrule height 0.2pt\hfill\strut
+        \vspace{0.2cm}
+
+        \hbox to \textwidth{%
+        \;\leaders\hrule height 0.2pt \hfill}
+        \vspace{0.2cm}
+
+        \hbox to \textwidth{%
+        \;\leaders\hrule height 0.2pt \hfill}
+        \vspace{1cm}
+
+        \settowidth{\tmp}{Штамп ПСС (ПСО)}
+
+        \hfill\hbox{\vbox{\hbox{Штамп ПСС (ПСО)}
+        \rlap{\raisebox{0cm}{\hbox to \tmp{\hfil\footnotesize (при наличии)\hfil}}}}}
+        \vspace{2cm}
+
+    \section{Решение МКК о зачёте маршрута}
+
+        Пройденный группой \textbf{горный} маршрут под руководством {{general_info['leader_short_name_pp']}} оценен
+        \;\leaders\hrule height 0.2pt \hfill\;категорией сложности.
+        \vspace{1cm}
+
+        \hfill Справки выданы в количестве\;\hbox to 2cm{\leaders\hrule height 0.2pt \hfill}\;шт.
+        \vspace{2cm}
+
+        \hbox to \textwidth{%
+        \textbf{Председатель МКК}\hfil\rlap{\raisebox{-0.3cm}{\hbox to 0.3\textwidth{\hfil\scriptsize подпись\hfil}}}%
+        \hbox to 0.3\textwidth{\leaders\hrule height 0.2pt \hfill}%
+        \rlap{\raisebox{-0.3cm}{\hbox to 0.3\textwidth{\hfil\scriptsize Фамилия И.О.\hfil}}}%
+        \hbox to 0.3\textwidth{\;(\;\leaders\hrule height 0.2pt \hfill\;)}}
+        \vspace{1cm}
+
+        \hbox to 0.35\textwidth{\hfil Штамп МКК}
+        \vspace{1cm}
+
+        \hbox to \textwidth{\hfil<<\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}>>\;\hbox to 3cm{\leaders\hrule height 0.2pt\hfil}\;%
+        20\,\vbox{\hbox{\hphantom{999}}\hrule height 0.2pt}\,г.}
+
+\newpage %---------------шестнадцатая страница-----------------------------
+
+    \strut
+
+\newpage %---------------семнадцатая страница------------------------------
+
+    {\centering%
+    \textbf{Положение о МКК\\
+    (Извлечение)}\par}
+    \vspace{1cm}
+
+    \textbf{5.7. При рассмотрении заявочных документов на походы МКК обязаны
+    проверить:}
+
+    \begin{itemize}[itemsep=2pt, leftmargin=1.1cm, label=$\triangleright$]
+        \item разработку маршрута и график движения группы по основному и запасным вариантам,
+        наличие картографических материалов;
+        \item знание руководителем группы района похода условий передвижения и естественных препятствий в нем;
+        \item соответствие туристского опыта руководителя и участников похода заявленному маршруту;
+        \item правильность подбора группой снаряжения, продовольствия, медикаментов;
+        \item намеченные группой меры по обеспечению безопасности при проведении похода;
+        \item правильность выбора контрольных пунктов и сроков;
+    \end{itemize}
+
+    Заявочные документы регистрируются и хранятся в организации, при которой создана МКК, не менее трех лет.
+    \vspace{0.5cm}
+
+    \textbf{5.8. МКК имеют право:}
+
+    \begin{itemize}[itemsep=2pt, leftmargin=1.1cm, label=$\triangleright$]
+        \item вызвать участников группы и проверить знание ими Правил проведения туристских
+        спортивных походов, вопросов техники и тактики похода;
+        \item назначить группе контрольный выход, где проверяется умение пользоваться снаряжением,
+        преодолевать естест\-венные препятствия и действовать в аварийных ситуациях.
+    \end{itemize}
+
+\newpage %---------------восемнадцатая страница---------------------------
+
+\strut
+
+\newpage %---------------девятнадцатая страница---------------------------
+
+% Пустая
+
+\newpage %---------------двадцатая страница-------------------------------
+
+\strut
+
+\newpage %---------------двадцать первая страница--------------------------
+
+\strut
+
+\end{document}

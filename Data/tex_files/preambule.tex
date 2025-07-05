@@ -1,0 +1,86 @@
+%%%----------СЛУЖЕБНОЕ----------%%%
+
+\usepackage{iftex}
+\usepackage{cmap}
+\usepackage{fixme}
+
+%%%----------ШРИФТЫ----------%%%
+\usepackage{amsmath, amsthm, wasysym}
+
+\ifxetex
+	\usepackage[charter]{mathdesign}
+	\usepackage{polyglossia}
+	\usepackage{fontenc}
+    \usepackage{fontspec}
+
+	\setmainlanguage{russian}
+	\setotherlanguage{english}
+	
+	% \newfontfamily\russianfont[Script=Cyrillic]{Raleway}
+	\setmainfont{ITC Charter Pro}
+\else
+	\usepackage[charter]{mathdesign}
+	\usepackage[T2A]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage[russian, english]{babel}
+	
+	\renewcommand*{\rmdefault}{cmr}
+	
+\fi
+
+%%%----------ГИПЕРССЫЛКИ----------%%%
+
+\usepackage{hyperref}
+
+\hypersetup{
+	linktoc=all,
+	colorlinks=true,
+	linkcolor=Blue,
+	urlcolor=Mulberry,
+	citecolor=OliveGreen,
+	filecolor=Mulberry
+}
+
+%%%----------ПОЛЯ----------%%%
+
+\usepackage[top = 1 cm, bottom = 1 cm, left = 1.4 cm, right = 1.4 cm]{geometry}
+\usepackage{indentfirst}
+
+%%%----------КОЛОНТИТЫЛЫ----------%%%
+
+\usepackage{fancyhdr}
+\renewcommand{\headrule}{}
+\setlength{\headheight}{1cm}
+\pagestyle{fancy}
+\fancyhead[OR]{Маршрутная книжка №\;\hbox to 2cm{\leaders \hrule height 0.2pt\hfill}}
+\fancyhead[E, OC, OL]{}
+
+%%%----------ГРАФИКА----------%%%
+
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage[dvipsnames, table]{xcolor}
+
+\definecolor{Gray}{gray}{0.9}
+
+%%%----------ТАБЛИЦЫ----------%%%
+
+\usepackage{array}
+\usepackage{longtable}
+
+\setlength{\arrayrulewidth}{0.25mm}
+\setlength{\arraycolsep}{1pt}
+\setlength{\tabcolsep}{0pt}
+
+%%%----------СПИСКИ----------%%%
+
+\usepackage[inline]{enumitem}
+
+%%%----------МОИ ДЛИНЫ----------%%%
+\usepackage{setspace}
+
+\newlength{\tmp}
+\newlength{\ttmp}
+
+
+\usepackage{ulem}
